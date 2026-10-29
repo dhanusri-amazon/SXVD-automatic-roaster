@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Powered Automatic Roster Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- LOGIN / CREATE ACCOUNT -->
+<div id="auth">
+  <div class="auth-card">
+    <div class="logo"></div>
+    <h1>SXVD</h1>
+    <p id="authTitle">Login to continue</p>
+    <input id="u" placeholder="Username">
+    <input id="p" type="password" placeholder="Password">
+    <input id="p2" type="password" placeholder="Confirm Password" class="hide">
+    <select id="r"><option>Manager</option><option>TL</option><option>HR</option></select>
+    <button id="authBtn" class="btn grad">🔐 Login</button>
+    <a id="authSwitch" href="#">Create Account</a>
+    <small id="authMsg"></small>
+    <div class="powered">Powered by <b>Dhanusri V (dhanq)</b></div>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" class="hide">
+  <aside>
+    <div class="brand"><span></span><b>SXVD<br>ROSTER</b></div>
+    <nav id="nav"></nav>
+    <button id="logout" class="btn ghost">Logout</button>
+  </aside>
+  <main>
+    <header><h2 id="pageTitle"></h2><span id="who" class="pill"></span></header>
+    <div id="view"></div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
